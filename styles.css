@@ -13,7 +13,7 @@ html, body {
     align-items: center;
 }
 
-#elementImag {
+#Logo {
     display: block;
     max-width: 10%;
     padding: 20px;
@@ -86,7 +86,7 @@ button:hover {
         max-height: 120px;
     }
 
-    #elementImag {
+    #Logo {
         display: block;
         max-width: 40%;
         padding: 20px;
