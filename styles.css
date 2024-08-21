@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(46, 139, 87);; /* Fundo suave opcional */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#elementImag {
+    display: block;
+    max-width: 10%;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 20px; /* Espaço entre a imagem e o contêiner */
+}
+
+.container {
+    background-color: #fff; /* Fundo opcional para o contêiner */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinha o texto centralizado */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Ajusta o tamanho da fonte do título */
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 24px); /* Ajusta o tamanho dos inputs e botão para se ajustarem à largura da tela */
+}
+
+button {
+    background-color: #ffc107;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DAA520;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para melhor legibilidade em dispositivos móveis */
+}
+
+#elementImage {
+    margin-top: 20px;
+    max-width: 150px; /* Aumenta o tamanho máximo da imagem */
+    max-height: 150px; /* Aumenta o tamanho máximo da imagem */
+    width: auto; /* Ajusta a largura da imagem para manter a proporção */
+    height: auto; /* Ajusta a altura da imagem para manter a proporção */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Ajusta o tamanho do título para dispositivos menores */
+    }
+
+    input, button {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #elementImage {
+        max-width: 120px; /* Reduz o tamanho máximo da imagem para dispositivos menores */
+        max-height: 120px;
+    }
+
+    #elementImag {
+        display: block;
+        max-width: 40%;
+        padding: 20px;
+        height: auto;
+        margin-bottom: 20px; /* Espaço entre a imagem e o contêiner */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1em; /* Ajusta ainda mais o tamanho do título para telas muito pequenas */
+    }
+
+    input, button {
+        padding: 6px;
+        margin: 6px;
+    }
+
+    #elementImage {
+        max-width: 100px; /* Reduz o tamanho máximo da imagem para telas pequenas */
+        max-height: 100px;
+    }
+}

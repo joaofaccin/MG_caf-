@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu Signo e Elemento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img id="elementImag" src="/images/Logo.png" alt="Elemento" />
+    <div class="container">
+        <h1>Descubra o seu Elemental</h1>
+        <form id="zodiacForm">
+            <label for="month">Mês:</label>
+            <input type="number" id="month" min="1" max="12" required>
+            <label for="day">Dia:</label>
+            <input type="number" id="day" min="1" max="31" required>
+            <button type="button" onclick="showZodiac()">Descobrir</button>
+        </form>
+        <div class="result" id="result">
+            <div id="signInfo"></div>
+            <img id="elementImage" src="" alt="" />
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
